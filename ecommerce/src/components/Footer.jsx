@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { MdFacebook } from "react-icons/md";
-import { FaInstagram,FaTwitter,FaPinterestSquare } from "react-icons/fa";
+import { FaInstagram,FaTwitter,FaPinterestSquare,FaMapMarkerAlt, FaPhoneAlt,FaMailBulk } from "react-icons/fa";
 
 const Container = styled.div`
     display: flex;
@@ -28,6 +28,7 @@ const Soialicon = styled.div`
     align-items: center;
     justify-content: center;
     margin-right: 20px;
+    cursor: pointer;
 `
 
 const Center = styled.div`
@@ -35,18 +36,33 @@ const Center = styled.div`
     padding: 20px;
 `
 const Title = styled.h3`
-    
+    margin-bottom: 30px;
 `
 const List = styled.ul`
-    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 ` 
 const Listitem = styled.li`
-    
+    width: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
 `
 const Right = styled.div`
     flex:1;
     padding: 20px;
 `
+const ContactItem = styled.div`
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+`
+const Payment = styled.img`
+    width: 50%;
+`
+
 const Footer = () => {
     return (
     <Container>
@@ -66,12 +82,12 @@ const Footer = () => {
                     <FaTwitter/>
                 </Soialicon>
                 <Soialicon color="E60023">
-                    <FaPinterestSquare/>
+                    <FaPinterestSquare />
                 </Soialicon>
             </Soialcontainer>
         </Left>
         <Center>
-            <Title>
+            <Title>Useful Links</Title>
                 <List>
                     <Listitem>Home</Listitem>
                     <Listitem>Cart</Listitem>
@@ -83,9 +99,23 @@ const Footer = () => {
                     <Listitem>Wishlist</Listitem>
                     <Listitem>Terms</Listitem>
                 </List>
-            </Title>
         </Center>
-        <Right></Right>
+        <Right>
+            <Title>Contact</Title>
+            <ContactItem>
+                <FaMapMarkerAlt style={{marginRight:"10px"}}/>
+                622 Dixie Path , South tobinchester 98336
+            </ContactItem>
+            <ContactItem>
+                <FaPhoneAlt style={{marginRight:"10px"}}/>
+                +201200417308
+            </ContactItem>
+            <ContactItem>
+                <FaMailBulk style={{marginRight:"10px"}}/>
+                noureldinyahia@gmail.com
+            </ContactItem>
+            <Payment src="https://i.ibb.co/Qfvn4z6/payment.png"/>
+        </Right>
     </Container>
 )
 }
