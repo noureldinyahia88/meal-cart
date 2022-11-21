@@ -1,15 +1,16 @@
 import './App.css';
-// import Home from './pages/Home';
+import Home from './pages/Home';
 import React from 'react';
 // import ProductList from './pages/ProductList';
-// import Product from './pages/Product';
-// import Register from './pages/Register';
-import Login from './pages/Login';
+import Product from './pages/Product';
+import Register from './pages/Register';
+// import Login from './pages/Login';
+import Cart from './pages/Cart';
 
 
 function App() {
   return (
-    <Login/>
+    <Register/>
   );
 }
 

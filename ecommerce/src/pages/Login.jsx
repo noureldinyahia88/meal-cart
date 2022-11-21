@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Mobile } from "../responsive"
 
 const Container = styled.div`
     width: 100vw;
@@ -15,12 +16,13 @@ const Warpper = styled.div`
     padding: 40px 20px;
     width: 30%;
     background-color: #fff;
+    ${Mobile({ width:"75%" })}
 `
 const Title = styled.h1`
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-
+    color: teal;
 `
 const Form = styled.form`
     display: flex;

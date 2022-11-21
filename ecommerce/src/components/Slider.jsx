@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { FaArrowLeft,FaArrowRight } from "react-icons/fa";
 import {sliderItems} from '../data'
 import { useState } from "react";
+import { Mobile } from "../responsive";
 
 const Container = styled.div`
     width:100%;
@@ -9,6 +10,7 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow: hidden;
+    ${Mobile({ display: "none"})}
 `
 const Arrow = styled.div`
     width: 50px;

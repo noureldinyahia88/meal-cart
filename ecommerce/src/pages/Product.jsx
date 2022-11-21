@@ -4,11 +4,13 @@ import Announcement from "../components/Announcement"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Newsletter from "../components/Newsletter"
+import { Mobile } from "../responsive"
 
 const Container = styled.div``
 const Wrapper = styled.div`
     padding: 50px;
     display: flex;
+    ${Mobile({ padding:"10px", flexDirection:"column"})}
 `
 const ImgConatainer = styled.div`
     flex:1;
@@ -17,10 +19,12 @@ const Image = styled.img`
     width: 100%;
     height: 90vh;
     object-fit: cover;
+    ${Mobile({ height:"40vh" })}
 `
 const InfoContainer = styled.div`
     flex: 1;
     padding: 0px 50px;
+    ${Mobile({ padding:"10px" })}
 `
 const Title = styled.h1`
     font-weight: 200;
@@ -37,6 +41,7 @@ const FillterContainer = styled.div`
     margin: 30px 0px;
     display: flex;
     justify-content: space-between;
+    ${Mobile({ width:"100%" })}
 `
 const Filter = styled.div`
     display: flex;
@@ -68,6 +73,7 @@ const Addcontainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    ${Mobile({ width:"100%" })}
 `
 const AoumntContainer = styled.div`
     display: flex;

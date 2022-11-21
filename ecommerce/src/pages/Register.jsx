@@ -1,4 +1,4 @@
-
+import { Mobile } from "../responsive"
 import styled from "styled-components"
 
 const Container = styled.div`
@@ -16,6 +16,7 @@ const Warpper = styled.div`
     padding: 20px;
     width: 40%;
     background-color: #fff;
+    ${Mobile({ width:"75%" })}
 `
 const Title = styled.h1`
     font-size: 24px;
